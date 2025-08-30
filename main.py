@@ -1,5 +1,6 @@
-from database import engine
+from database import engine,metadata_obj
+import models
 
-conn = engine.connect()
+metadata_obj.create_all(engine)
 
-print(conn)
+

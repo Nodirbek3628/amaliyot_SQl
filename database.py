@@ -1,6 +1,5 @@
-from sqlalchemy import (
-    create_engine, URL, MetaData
-)
+from sqlalchemy import create_engine, URL, MetaData
+
 import config
 
 DATABASE_URL = URL.create(
